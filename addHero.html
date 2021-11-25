@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleAddHero.css">
+    <title>Frontend Heroes Shop - Add Hero</title>
+</head>
+<body>
+     <!-- Header section -->
+
+     <header>
+        <div class="header1">
+            <p>Discounts of 20%</p>
+        </div>
+        <div class="header2">
+            <a href="index.html"><img src="img/shop.png" alt="Shop logo"></a> 
+            <h1>Frontend Heroes Shop</h1>
+        </div>
+        <div class="header3">
+            <ul>
+                <li><a href="contact.html">Contact</a></li> 
+                <li><a href="signup.html">Sign up</a></li>
+                <li><a href="login.html">Sign in</a></li> 
+            </ul>
+            <div class="dropDown">
+                <button class="dropBton"><img src="img/menuicon.png" alt=""></button>
+                <div class="dropDownContent">
+                    <a href="contact.html">Contact</a>
+                    <a href="signup.html">Sign up</a>
+                    <a href="login.html">Sign in</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact form -->
+
+    <main>
+        <div class="formGeneral">
+            <div class="formTitle">
+                <h2>Add your Heroe!</h2>
+                <p>Add your favorite character by completing the options.</p>
+            </div>
+    
+            <form action="" class="formBody">
+                <div class="rowForm">
+                    <div class="rowFormSpec">
+                        <label for="name">*Name</label>
+                        <input class="inputText" type="text" name="name" id="name">
+                    </div>
+                    <div class="rowFormSpec">
+                        <label for="species">*Species</label>
+                        <select class="inputText" name="species" id="species">
+                            <option value="">Please choose option</option>
+                            <option value="human">Human</option>
+                            <option value="animal">Animal</option>
+                            <option value="hybrid">Hybrid</option>
+                            <option value="uknow">Uknow</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="rowForm">
+                    <div class="rowFormSpec">
+                        <label for="dateBorn">Date of born</label>
+                        <input class="inputText" type="date" id="dateBorn" name="date-born">
+                    </div>
+                    <div class="rowFormSpec">
+                        <label for="picture">Add photo</label>
+                        <input class="inputText" type="file" id="picture" name="picture" accept="image/png, image/jpeg">
+                    </div>
+                </div>
+
+                <div class="rowForm">
+                    <div class="rowFormSpec">
+                        <textarea class="inputText" name="comment" id="" cols="30" rows="15" placeholder="Description"></textarea>
+                    </div>
+                    <div class="optionsForm">
+                        <label for="">Powers</label>
+                            <ul>
+                                <li>
+                                    <input type="checkbox">
+                                    <span>Fly</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <span>Smart</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <span>X-ray view</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <span>Money b*tch</span>
+                                </li>
+                            </ul>
+                            
+                        <hr>
+
+                        <label for="">Character type</label>
+                        <ul>
+                            <li>
+                                <input type="radio">
+                                <span>Heroe</span>
+                            </li>
+                            <li>
+                                <input type="radio">
+                                <span>villain</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div> 
+                
+                <div class="rowForm">
+                    <div class="rowFormSpec">
+                        <button class="formButton formButtonReset" type="reset">Reset</button> 
+                    </div>
+                     <div class="rowFormSpec">
+                        <button class="formButton" type="submit">Create</button>
+                     </div>
+                </div>
+            </form>
+        </div>
+    </main>
+  
+    <!-- footer -->
+    <footer>
+        <p>All rights reserved 2021</p>
+    </footer>
+
+</body>
+</html>

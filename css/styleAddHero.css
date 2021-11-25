@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+:root{
+    --primary-color-1: #1CD1B0;
+    --primary-color-1-dark: #07a084; 
+    --primary-color-2: #00669F;
+    --primary-color-3: #001D2D;
+    --primary-color-4: #2C0187;
+    --primary-color-5: #888888;
+    --primary-color-5-dark: #5f5f5f;
+    
+    --card-bg-color: #F3F3F3;
+
+    --font-color-1: #FFFFFF;
+    --font-color-2: #dbdbdb;
+    --font-color-3: #333333;
+
+    --form-general-width: 50rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header section */
+
+.header1{
+    background-color: var(--primary-color-1);
+    padding: 0.6rem;
+    font-weight: 700;
+}
+
+.header2{
+    display: flex;
+    align-items: center;
+}
+
+.header2,footer{
+    background-color: var(--primary-color-2);
+    color: var(--font-color-1);
+}
+
+.header3{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--primary-color-3);
+    padding: 0.7rem 0;
+}
+
+.header3 ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header3 a:link{
+    text-decoration: none;
+    color: var(--font-color-1);
+}
+
+.header3 a:visited{
+    color: var(--font-color-1);
+}
+
+.header3 ul li{
+    margin-right: 1rem;
+}
+
+/* Hidden drop down menu button */
+
+.dropBton{
+    display: none;
+    background-color: var(--primary-color-3);
+    border: none;
+    cursor: pointer;
+}
+
+.dropDown{
+    display: none;
+    position: relative;
+    margin-right: 1rem;;
+}
+
+.dropDownContent{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropDownContent a:link{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropDownContent a:visited{
+    color: black;
+}
+
+.dropDown:hover .dropDownContent{
+    display: block;
+}
+
+/* Form style */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.formGeneral{
+    background: linear-gradient(var(--primary-color-2), var(--font-color-2));
+    color: var(--font-color-1);
+    border-radius: 40px;
+    width: var(--form-general-width);
+    margin: 4rem;
+    padding: 0 4rem;
+}
+
+.formTitle{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.formTitle h2{
+    font-size: 2rem;
+    color: var(--font-color-1);
+}
+
+.formBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rowForm{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.rowFormSpec,.optionsForm{
+    width: 47%;
+}
+
+.formBody label{
+    font-weight: 300;
+}
+
+input[type="file"]{
+    padding-top: 0.8rem  ;
+}
+
+.optionsForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.optionsForm span{
+    margin-left: 0.7rem;
+}
+
+.optionsForm li{
+    list-style-type: none;
+    margin: 0.5rem 0;
+}
+
+.inputText{
+    width: 100%;
+    height: 3rem;
+    margin: 1rem 0 0 0;
+    padding: 0 0.5rem;
+    border-radius: 0.8rem;
+    border: none;
+}
+
+.rowFormSpec textarea{
+    height: initial;
+    resize: none;
+}
+
+/* Button Styles  */
+
+.formButton{
+    font-size: 1.5rem;
+    width: 100%;
+    height: 3rem;
+    border-radius: 1rem;
+    margin: 1rem 0 1rem;
+    border: none;
+    background-color: var(--primary-color-1);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.formButtonReset{
+    background-color: var(--primary-color-5);
+    color: var(--font-color-1);
+}
+
+.formButton:hover{
+    background-color: var(--primary-color-1-dark);
+}
+
+.formButtonReset:hover{
+    background-color: var(--primary-color-5-dark);
+}
+
+/* Footer section */
+
+footer{
+    text-align: center;
+    padding: 0.938rem;
+}
+
+/* Media queries */
+
+@media (max-width: 768px ) {
+
+    .header3 ul{
+        display: none;
+    }
+
+    .dropDown,.dropBton{
+        display: block;
+    }
+
+    .formGeneral{
+        width: 90vw;
+        padding: 0;
+        margin: 4rem 0;
+    }
+
+    .rowForm{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rowFormSpec{
+        margin-bottom: 0.5rem;
+    }
+
+    .rowFormSpec,.optionsForm{
+        width: 90%;
+    }
+
+    footer{
+        padding: 0.5rem;
+        font-size: 0.8rem;
+
+    }
+
+}
