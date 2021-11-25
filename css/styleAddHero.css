@@ -72,6 +72,10 @@ body{
     color: var(--font-color-1);
 }
 
+.header3 a:active{
+    color: var(--font-color-3);
+}
+
 .header3 ul li{
     margin-right: 1rem;
 }
@@ -175,7 +179,7 @@ input[type="file"]{
     justify-content: space-between;
 }
 
-.optionsForm span{
+.optionsForm label{
     margin-left: 0.7rem;
 }
 
@@ -196,6 +200,7 @@ input[type="file"]{
 .rowFormSpec textarea{
     height: initial;
     resize: none;
+    font-size: 1rem;
 }
 
 /* Button Styles  */

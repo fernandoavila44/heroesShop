@@ -48,11 +48,11 @@
                 <div class="rowForm">
                     <div class="rowFormSpec">
                         <label for="name">*Name</label>
-                        <input class="inputText" type="text" name="name" id="name">
+                        <input class="inputText" type="text" name="name" id="name" required>
                     </div>
                     <div class="rowFormSpec">
                         <label for="species">*Species</label>
-                        <select class="inputText" name="species" id="species">
+                        <select class="inputText" name="species" id="species" required>
                             <option value="">Please choose option</option>
                             <option value="human">Human</option>
                             <option value="animal">Animal</option>
@@ -65,36 +65,36 @@
                 <div class="rowForm">
                     <div class="rowFormSpec">
                         <label for="dateBorn">Date of born</label>
-                        <input class="inputText" type="date" id="dateBorn" name="date-born">
+                        <input class="inputText" type="date" id="dateBorn" name="date-born" required>
                     </div>
                     <div class="rowFormSpec">
-                        <label for="picture">Add photo</label>
-                        <input class="inputText" type="file" id="picture" name="picture" accept="image/png, image/jpeg">
+                        <label>Add photo</label>
+                        <input class="inputText" type="file" id="picture" name="picture" accept="image/png, image/jpeg" required>
                     </div>
                 </div>
 
                 <div class="rowForm">
                     <div class="rowFormSpec">
-                        <textarea class="inputText" name="comment" id="" cols="30" rows="15" placeholder="Description"></textarea>
+                        <textarea class="inputText" name="comment" id="" cols="30" rows="15" placeholder="Description" required></textarea>
                     </div>
                     <div class="optionsForm">
                         <label for="">Powers</label>
                             <ul>
                                 <li>
-                                    <input type="checkbox">
-                                    <span>Fly</span>
+                                    <input type="checkbox" id="fly" name="power" value="fly">
+                                    <label for="fly">Fly</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox">
-                                    <span>Smart</span>
+                                    <input type="checkbox" id="smart" name="power" value="smart">
+                                    <label for="smart">Smart</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox">
-                                    <span>X-ray view</span>
+                                    <input type="checkbox" id="x-ray-view" name="power" value="x-ray-view">
+                                    <label for="x-ray-view">X-ray view</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox">
-                                    <span>Money b*tch</span>
+                                    <input type="checkbox" id="money" name="power" value="money">
+                                    <label for="money">Money b*tch</label>
                                 </li>
                             </ul>
                             
@@ -103,12 +103,12 @@
                         <label for="">Character type</label>
                         <ul>
                             <li>
-                                <input type="radio">
-                                <span>Heroe</span>
+                                <input type="radio" id="heroe" name="character-type">
+                                <label for="heroe">Heroe</label>
                             </li>
                             <li>
-                                <input type="radio">
-                                <span>villain</span>
+                                <input type="radio" id="villain" name="character-type">
+                                <label for="villain">villain</label>
                             </li>
                         </ul>
 

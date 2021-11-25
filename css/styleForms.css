@@ -2,6 +2,7 @@
 
 :root{
     --primary-color-1: #1CD1B0;
+    --primary-color-1-light: #c7fff5; 
     --primary-color-1-dark: #07a084; 
     --primary-color-2: #00669F;
     --primary-color-3: #001D2D;
@@ -124,6 +125,12 @@ main{
 .fterForm a:visited{
     color: var(--primary-color-2);
     text-decoration: none;
+}
+
+/* Input validations styles  */
+
+.inputText:focus{
+    background-color: var(--primary-color-1-light);
 }
 
 /* Footer section */

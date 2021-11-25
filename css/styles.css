@@ -81,6 +81,10 @@ header{
     color: var(--font-color-1);
 }
 
+.header3 a:active{
+    color: var(--font-color-3);
+}
+
 .header3 ul li{
     margin-right: 1rem;
 }
